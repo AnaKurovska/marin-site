@@ -5,6 +5,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: overlay;
     color: #fff;
     &__title {
     font-family: Oswald;
