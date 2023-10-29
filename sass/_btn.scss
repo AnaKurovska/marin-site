@@ -1,9 +1,7 @@
 .btn {
-    text-transform: uppercase;
-    border: none;
     background: #2D5E5E;
     border-radius: 10px;
-    padding: 8px 42px;
+    padding: 6px 42px;
     white-space: nowrap;
     display: inline-flex;
     justify-content: center;
@@ -13,58 +11,29 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 1.33;
-    &:hover,
-    &:focus {
-        opacity: .7;
+    border: 3px solid transparent;
+    min-width: 250px;
+    &_appoint {
+        border: 1px solid #000;
+        background: transparent;
+        width: 369px;
     }
-    &:active {
-        opacity: .4;
+    &_desc {
+        border: 1px solid #000;
+        background: transparent;
+        width: 372px;
+        height: 180px;
     }
-}
 
-.btn__question {
-    border: 3px solid #2D5E5E;
+    &_bordered {
+    border-color: #2D5E5E;
     background: transparent;
-    border-radius: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    white-space: nowrap;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 1.33;
-    width: 250px;
-    margin-right: 30px;
-    &:hover,
-    &:focus {
-        border: none;
-        background: #2D5E5E;
-    }
-    &:active {
-        opacity: .4;
-    }
-}
-
-.btn__consultation {
-    border: none;
+    
+    &:hover {
     background: #2D5E5E;
-    border-radius: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    white-space: nowrap;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 1.33;
-    width: 250px;
+    }
+
+    }
     &:hover,
     &:focus {
         opacity: .7;
@@ -73,3 +42,5 @@
         opacity: .4;
     }
 }
+
+

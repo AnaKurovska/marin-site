@@ -1,24 +1,37 @@
 .aboutme { 
     padding-top: 60px;
-    padding-bottom: 61px;
+    padding-bottom: 60px;
     background-image: url("../img/about_me_rectangle.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 494px;
+    grid-template-rows: auto 1fr auto;
+    gap: 35px 50px; 
+    &__title,
+    &__desc {
+    margin: 0;
+    line-height: 1.5;
+    }
+
     &__title {
     font-family: Oswald;
     font-size: 36px;
-    line-height: 1.5;
+ 
+    margin-bottom: 15px;
    }
    &__desc {
     font-size: 16px;
-    line-height: 1.5;
-    max-width: 625px;
-    margin: 0 0 50px;
+    font-weight: 700; 
    }
    &__photo {
-    float: right;
-    margin: 60px 0 0 50px;
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+   }
+   &__btns {
+    display: flex;
+    gap: 30px;
    }
 }
