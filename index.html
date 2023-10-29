@@ -60,7 +60,6 @@
           </section>
 
 <section class="aboutme center">
-  <img class="aboutme__photo" src="img/about_me_photo.jpg" alt="Немного обо мне">
   <h3 class="aboutme__title">
     Немного обо мне
   </h3>
@@ -73,9 +72,48 @@
     Эта парадигматическая страна, в которой жаренные члены 
     предложения залетают прямо.
   </p>
-  <a href="#" class="btn__question"> Задать вопрос</a>
-  <a href="#" class="btn__consultation"> Хочу консультацию</a>
+  <div class="aboutme__btns">
+  <button class="btn btn_bordered">Задать вопрос</button>
+  <a href="#" class="btn">Хочу консультацию</a>
+</div>
+  <img class="aboutme__photo" src="img/about_me_photo.jpg" alt="Немного обо мне">
 </section>
+
+<forms class="forms center">
+<h1 class="forms__title">
+  Записаться на прием</h1>
+<div class="forms__wrapper">
+  <label class="forms__input forms__input-text ">
+  <input class="" type="text" placeholder="Ваше имя*" name="user-name"  required>
+  </label>
+
+  <label class="forms__input forms__input-tel ">
+  <input class="" type="tel" placeholder="Ваш телефон*" name="tel"  required>
+  </label>
+  
+  <label class="forms__input-wrap forms__input-wrap_select ">
+  <select class="" placeholder="Тема встречи*" name="offers-topic"  required>
+    <option value="" disabled selected hidden> Тема встречи*</option>
+  <option value="1">Личные консультации</option>
+  <option value="2">Семейная терапия</option>
+  <option value="3">Сенситивные группы</option>
+  </select >
+  </label>
+
+<label class="forms__textarea ">
+<textarea id="wishes" name="wishes"> Пожелания</textarea>
+</label>
+</div>
+
+<label class="forms__checkbox">
+<input type="checkbox" name="checkbox" value="forms checkbox" class="visually-hidden">
+<span class="forms__checkbox-label">Я согласен с политикой конфиденциальности</span>
+</label>
+
+<div class="forms__btn">
+<button class="btn">Отправить</button>
+</div>
+</forms>
 
 </main>
 
