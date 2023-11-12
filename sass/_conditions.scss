@@ -1,0 +1,39 @@
+.conditions {
+    background-image: url("../img/counter_bg.jpg"); 
+    background-size: cover;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+    &__item {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 1.5;
+        font-family: Montserrat;
+        font-weight: 900;
+        margin: 0 0 14px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-family: Oswald;
+        line-height: 1.33;
+        font-weight: 700;
+        margin: 0 0 20px;
+    }
+
+
+    &__desc {
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+}
